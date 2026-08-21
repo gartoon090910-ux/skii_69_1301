@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        MoveLeftOrRight();
         
     }
 
@@ -37,7 +37,5 @@ public class Player : MonoBehaviour
     {
         moveValue = moveAction.ReadValue<Vector2>();
         rb.AddForce(moveValue.x * Vector3.right * forcePower);
-
-
     }
 }
